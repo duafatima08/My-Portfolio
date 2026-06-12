@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dua Fatima | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#050816;
+color:white;
+}
+
+.gradient{
+background:linear-gradient(135deg,#8B5CF6,#06B6D4);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:50px;
+background:
+radial-gradient(circle at top left,#8B5CF633,transparent 30%),
+radial-gradient(circle at bottom right,#06B6D433,transparent 30%);
+}
+
+.glow{
+box-shadow:0 0 40px rgba(139,92,246,.5);
+}
+
+.card{
+background:#0f172a;
+border:1px solid rgba(255,255,255,.1);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+nav{
+position:fixed;
+width:100%;
+top:0;
+backdrop-filter:blur(15px);
+background:rgba(0,0,0,.2);
+z-index:1000;
+}
+
+.nav-container{
+max-width:1200px;
+margin:auto;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+}
+
+section{
+padding:100px 8%;
+}
+
+.btn{
+padding:12px 28px;
+border-radius:50px;
+text-decoration:none;
+display:inline-block;
+margin-right:15px;
+}
+
+.primary{
+background:#8B5CF6;
+color:white;
+}
+
+.secondary{
+border:1px solid #06B6D4;
+color:#06B6D4;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+border-top:1px solid rgba(255,255,255,.1);
+}
+
+img{
+max-width:100%;
+}
+
+@media(max-width:768px){
+
+.hero{
+text-align:center;
+}
+
+.nav-links{
+display:none;
+}
+
+}
+
+</style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body>
+
+<nav>
+<div class="nav-container">
+
+<h2 class="gradient">Dua Fatima</h2>
+
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</div>
+
+</div>
+</nav>
+
+<section class="hero">
+
+<div style="max-width:1200px;width:100%;display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));align-items:center;gap:50px;">
+
+<div>
+
+<h1 style="font-size:60px;font-weight:bold;">
+Hi, I'm
+<span class="gradient">Dua Fatima</span>
+</h1>
+
+<p style="margin:25px 0;color:#cbd5e1;font-size:18px;line-height:1.8;">
+Modern Web Application Development Student passionate about creating beautiful, responsive and user-friendly web experiences using HTML, CSS, Tailwind CSS and JavaScript.
+</p>
+
+<a href="#projects" class="btn primary">
+View Projects
+</a>
+
+<a href="#contact" class="btn secondary">
+Contact Me
+</a>
+
+</div>
+
+<div style="text-align:center;">
+
+<img src="img/dua.jpg"
+class="glow"
+style="width:350px;height:350px;border-radius:50%;object-fit:cover;border:5px solid #8B5CF6;">
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="gradient" style="font-size:40px;margin-bottom:30px;">
+About Me
+</h2>
+
+<div class="card" style="padding:40px;border-radius:25px;">
+
+<p style="line-height:2;color:#d1d5db;font-size:18px;">
+
+I am Dua Fatima, an aspiring Frontend Developer currently pursuing Modern Web Application Development.
+
+I enjoy transforming ideas into interactive and visually appealing digital experiences through clean code and modern design principles.
+
+My journey in web development started with curiosity and continues with a passion for learning, building and improving every day.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="gradient" style="font-size:40px;margin-bottom:40px;">
+Skills
+</h2>
+
+<div class="skills">
+
+<div class="card" style="padding:30px;border-radius:20px;text-align:center;">
+<h3>HTML</h3>
+</div>
+
+<div class="card" style="padding:30px;border-radius:20px;text-align:center;">
+<h3>CSS</h3>
+</div>
+
+<div class="card" style="padding:30px;border-radius:20px;text-align:center;">
+<h3>Tailwind CSS</h3>
+</div>
+
+<div class="card" style="padding:30px;border-radius:20px;text-align:center;">
+<h3>JavaScript</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="gradient" style="font-size:40px;margin-bottom:40px;">
+Projects
+</h2>
+
+<div class="projects">
+
+<div class="card" style="padding:30px;border-radius:20px;">
+<h3>MERN Blog</h3>
+<p style="margin:15px 0;color:#cbd5e1;">
+Modern blog platform project.
+</p>
+<a href="https://github.com/duafatima08/MERN-blog" target="_blank">
+View Project →
+</a>
+</div>
+
+<div class="card" style="padding:30px;border-radius:20px;">
+<h3>Academia Website</h3>
+<p style="margin:15px 0;color:#cbd5e1;">
+Educational website project.
+</p>
+<a href="https://github.com/duafatima08/academia" target="_blank">
+View Project →
+</a>
+</div>
+
+<div class="card" style="padding:30px;border-radius:20px;">
+<h3>Calculator App</h3>
+<p style="margin:15px 0;color:#cbd5e1;">
+Responsive calculator application.
+</p>
+<a href="https://github.com/duafatima08/Calculator.app" target="_blank">
+View Project →
+</a>
+</div>
+
+<div class="card" style="padding:30px;border-radius:20px;">
+<h3>Quran Website</h3>
+<p style="margin:15px 0;color:#cbd5e1;">
+Multi-page Quran learning website.
+</p>
+<a href="https://github.com/duafatima08/quran-kareem-website" target="_blank">
+View Project →
+</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="education">
+
+<h2 class="gradient" style="font-size:40px;margin-bottom:40px;">
+Education
+</h2>
+
+<div class="card" style="padding:40px;border-radius:20px;">
+
+<h3>Class 10 Student</h3>
+
+<p style="margin-top:15px;color:#cbd5e1;">
+Currently pursuing academic studies alongside Modern Web Application Development.
+</p>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="gradient" style="font-size:40px;margin-bottom:40px;">
+Contact Me
+</h2>
+
+<div class="card" style="padding:40px;border-radius:20px;">
+
+<a href="https://www.instagram.com/itsduafatima_08/" target="_blank">
+Instagram
+</a>
+
+<br><br>
+
+<a  class="hover:bg-color-purple"   href="https://www.linkedin.com/in/dua-fatima-4b1b933b1/" target="_blank">
+LinkedIn
+</a>
+<br><br>
+<a> Gmail : duafatimaoffical25@gmail.com</a>
+
+</div>
+
+</section>
+
+<footer>
+©  Dua Fatima | Portfolio
+</footer>
+
+</body>
+</html>
